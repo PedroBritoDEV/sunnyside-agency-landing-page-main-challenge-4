@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+ * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+    font-size: 18px;
+}
+header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+    height: 800px;
+    width: 100vw;
+    position: relative;
+}
+header nav {
+    max-width: 1300px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 30px;
+    margin-left: 40px;
+}
+.mobile-btn {
+    display: none;
+    margin-right: 40px;
+}
+.mobile-btn i {
+    color: white;
+    font-size: 40px;
+}
+header nav div a p {
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 35px;
+}
+header nav div .btn-contact p {
+    background-color: white;
+    color: black;
+    padding: 15px 24px;
+    border-radius: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    transition: .3s;
+}
+header nav div .btn-contact p:hover {
+    color: white;
+    background-color: #6eceff;
+}
+header h1 {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 3em;
+    color: white;
+    margin: 70px 0;
+    letter-spacing: 10px;
+}
+header .arrow {
+    display: flex;
+    justify-content: center;
+    animation: MoveArrow 2s infinite;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+main section {
+    width: 50vw;
+    position: relative;
+}
+main section .square-content {
+    height: 0;
+    padding-bottom: 83.4%;
+}
+main section .square-content img {
+    width: 100%;
+}
+main section .square-content .text-content {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 303px;
+    height: 228px;
+}
+main section .square-content .text-content h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: #23303e;
+}
+main section .square-content .text-content p {
+    color: #818498;
+    margin: 30px 0;
+    font-size: .9em;
+}
+main section .square-content .text-content a {
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: #23303e;
+    position: relative;
+    
+}
+main section .square-content .text-content a::before {
+    position: absolute;
+    content: '';
+    width: 115%;
+    height: 12px;
+    left: -10px;
+    bottom: -4px;
+    z-index: -1;
+    border-radius: 1rem;
+    transition: .3s;
+}
+main .square-1 .square-content .text-content a::before {
+    background-color: #fad40055;;
+}
+main .square-1 .square-content .text-content a:hover::before {
+    background-color: #fad400;
+}
+main .square-4 .square-content .text-content a::before {
+    background-color: #fe78673f;
+}
+main .square-4 .square-content .text-content a:hover::before {
+    background-color: #fe7867;
+}
+main section .square-content .text-image {
+    position: absolute;
+    bottom: 20px; left: 0; right: 0;
+    margin: auto;
+    width: 370px;
+    height: 175px;
+    text-align: center;
+}
+main section .square-content .text-image h3 {
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+main .square-5 .square-content .text-image h3 {
+    color: #25564b;
+}
+main .square-5 .square-content .text-image p {
+    color: #25564b;
+}
+main .square-6 .square-content .text-image h3 {
+    color: #19536b;
+}
+main .square-6 .square-content .text-image p {
+    color: #19536b;
+}
+aside {
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+aside h3 { 
+    font-family: 'Fraunces', serif;
+    letter-spacing: 4px;
+    font-size: 1.5em;
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+}
+aside .clients {
+    max-width: 1200px;
+    margin: auto;
+}
+aside .clients .clients-content {
+    display: flex;
+    margin-top: 80px;
+}
+aside .clients .clients-content div {
+    max-width: 320px;
+    margin: 0 20px;
+}
+aside .clients .clients-content div picture{
+    display: flex;
+    justify-content: center;
+}
+aside .clients .clients-content div picture img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+aside .clients .clients-content div p {
+    color: hsl(233, 7%, 46%);
+    font-size: .9em;
+    font-weight: 300;
+    text-align: center;
+    margin: 55px 0;
+}
+aside .clients .clients-content div h5 {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    font-size: 1.1em;
+}
+aside .clients .clients-content div .ocupation {
+    margin: 5px 0;
+    color: hsl(210, 4%, 67%);
+    font-size: .7em;
+}
+.four-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.four-images div {
+    width: 25vw;
+}
+.four-images div picture img {
+    width: 100%;
+}
+
+footer {
+    height: 350px;
+    margin-top: -4px;
+    background-color: #90d4c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-content {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footer-content img {
+    width: 170px;
+    margin: auto;
+    filter: invert(70%);
+}
+footer .footer-content div{
+    margin: 50px 0 90px 0;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-content div a{
+    text-decoration: none;
+    color: #25564b;
+    transition: .2s;
+}
+footer .footer-content div a:hover {
+    color: white;
+}
+footer .footer-content ul{
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-content ul li{
+    list-style: none;
+}
+footer .footer-content ul li a{}
+footer .footer-content ul li a i{
+    color: #25564b;
+    font-size: 1.3em;
+    transition: .2s;
+}
+footer .footer-content ul li a i:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes MoveArrow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-.5rem);
+    }
+}
