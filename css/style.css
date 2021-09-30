@@ -12,6 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    position: relative;
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100vw;
@@ -36,7 +37,7 @@ header nav {
 }
 .logo {
     height: 30px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .mobile-btn {
     display: none;
@@ -282,6 +283,16 @@ footer .footer-content ul li a i{
 footer .footer-content ul li a i:hover {
     color: white;
 }
+.creditos {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+}
+.creditos p {
+    text-align: center;
+}
+
 
 
 
